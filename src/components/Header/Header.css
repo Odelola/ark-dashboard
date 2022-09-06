@@ -1,0 +1,109 @@
+#header{
+    background: var(--primary-gray);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5000;
+}
+.headerInner{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 2.5rem;
+}
+.headerLinks{
+    display: flex;
+    column-gap: 5.5rem;
+}
+.headerLink{
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+}
+.headerLink_text{
+    color: var(--text-white);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.headerIconLinks{
+    display: flex;
+    column-gap: 2.7rem;
+}
+.headerSearch{
+    position: relative;
+    width: 19rem;
+    height: 3.9rem;
+    background: var(--text-white);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+#headerTextInput{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 3.2rem;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+#headerTextInput::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.headerSearch svg{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.headerNotification{
+    width: 37px;
+    height: 37px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-gray);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.headerNotification .notificationEllipse{
+    position: absolute;
+    top: 2%;
+    right: 4.5%;
+}
+.headerMessages{
+    position: relative;
+}
+.headerMessages .notificationEllipse{
+    position: absolute;
+    top: -7%;
+    right: -2%;
+}
+.headerMenu{
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+}
+.headerUser{
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+}

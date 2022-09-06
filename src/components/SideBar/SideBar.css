@@ -1,0 +1,138 @@
+#sideBar{
+    background: var(--primary-black);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 23vw;
+    height: 100vh;
+    /* z-index: 2000; */
+    overflow-y: scroll;
+}
+.sideBarInner{
+    padding-top: 13.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sideBarTabs{
+    display: flex;
+    justify-content: space-between;
+    background: var(--primary-white);
+    width: 23rem;
+    height: 4.7rem;
+    margin-bottom: 4rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+    box-shadow: .2rem .2rem .7rem .3rem rgba(0, 0, 0, 0.06);
+    border-radius: .7rem;
+    webkit-border-radius: 7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+}
+.sideBarTabs_slideIndicator{
+    width: 49.5%;
+    height: 4.4rem;
+    background: var(--primary-color);
+    position: absolute;
+    right: .5%;
+    top: 50%;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+.sideBarTab{
+    flex-basis: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideBarTab a{
+    text-align: center;
+    color: var(--text-dark);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    z-index: 300;
+}
+/*  */
+.sideBarTabs.active .sideBarTabs_slideIndicator{
+    left: .5%;
+    /* top: 50%; */
+}
+.sideBarTab.active  a{
+    color: var(--text-white);
+}
+.sideBarProfileInfo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.5rem;
+}
+.sideBarProfileInfoCategories .sideBarProfileInfo_editContent{
+    margin-top: .5rem;
+}
+.sideBarProfileInfo_heading{
+    font-style: normal;
+    font-weight: 700;
+    color: var(--primary-white);
+    font-size: 1.7rem;
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+}
+.sideBarProfileInfo_list{
+    list-style-type: none;
+}
+.sideBarProfileInfo_list li{
+    color: var(--primary-white);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    column-gap: .6rem;
+}
+.sideBarProfileInfo_progressList{
+    /* display: flex; */
+}
+.sideBarProfileInfo_progressList .sideBarProfileInfo_progressBar{
+    /* margin-right: .4rem; */
+    color: var(--primary-color);
+    width: 5.5rem;
+    flex-basis: 33%;
+    height: .4rem;
+}
+.sideBarProfileInfo_progressList .sideBarProfileInfo_progressBar:last-child{
+    margin-right: 0rem;
+}
+.sideBarProfileInfo_editContent{
+    width: 1.9rem;
+    height: 1.9rem;
+    background: var(--primary-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

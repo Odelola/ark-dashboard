@@ -1,0 +1,51 @@
+#bidSearch{
+    width: 100%;
+}
+.bidSearchInner{
+    width: 90%;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.06);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    position: relative;
+}
+#bidTextInput {
+    background: none;
+    border: none;
+    border-radius: 7px;
+    padding: 1.5rem 2.6rem;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+}
+#bidTextInput::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.bidSearchButton{
+    width: 5.5rem;
+    height: 5.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}

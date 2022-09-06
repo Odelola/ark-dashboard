@@ -1,0 +1,45 @@
+#bidFilters{
+    margin-top: 2rem;
+}
+.bidFiltersInner h4{
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.bidFilter{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 2.5rem;
+}
+.bidFilter h3{
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.bidFilterButtons{
+    display: flex;
+    column-gap: 3rem;
+}
+.bidFilterButton{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--text-dark-alt);
+    border: 0.8px solid var(--primary-black);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    background: none;
+    padding: .9rem 1.8rem;
+    white-space: nowrap;
+}
+.bidFilterButton:active{
+    background: var(--primary-color);
+    color: var(--text-white);
+}

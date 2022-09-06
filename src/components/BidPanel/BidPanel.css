@@ -1,0 +1,14 @@
+#bidPanel{
+    /* margin-top: 110px; */
+    margin: 0 auto;
+    padding: 5rem;
+    width: 90rem;
+
+}
+#bidCards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
